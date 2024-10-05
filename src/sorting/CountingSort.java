@@ -17,7 +17,7 @@ public class CountingSort<T> extends Sort<T> {
 		System.out.println("Counting Sort: ");
 		
 		for (int i = 0; i < data.size(); i++) {
-			countArr.set(i, data.get(i));
+			countArr.set(i, countArr.get(i));
 		}
 	}
 

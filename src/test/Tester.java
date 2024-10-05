@@ -10,6 +10,9 @@ public class Tester {
 
 	public static void main(String[] args) {
 		
+		Object o = new Object();
+		System.out.println(o.hashCode());
+		
 		List<Integer> dataInt = new ArrayList<Integer>();
 		dataInt.add(2);
 		dataInt.add(3);

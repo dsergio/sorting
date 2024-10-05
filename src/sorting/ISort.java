@@ -9,5 +9,6 @@ public interface ISort<T> {
 	void sort();
 	void timeAnalysis();
 	List<T> getSortedData();
+	void setDataKeys();
 
 }

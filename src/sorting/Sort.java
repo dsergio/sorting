@@ -1,12 +1,23 @@
 package sorting;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public abstract class Sort<T> implements ISort<T> {
-	
+
 	protected List<T> data = new ArrayList<T>();
 	protected List<T> sortedData = new ArrayList<T>();
+	
+	protected int[] intData;
+	
+	private Map<T, Integer> indexedData = new HashMap<T, Integer>();
+	
+	@Override
+	public void setDataKeys() {
+		
+	}
 	
 	@Override
 	public List<T> getSortedData() {
@@ -16,6 +27,11 @@ public abstract class Sort<T> implements ISort<T> {
 	public Sort(List<T> data) {
 		super();
 		this.data = data;
+	}
+	
+	public Sort(int[] data) {
+		super();
+		this.intData = data;
 	}
 	
 	public void print() {
