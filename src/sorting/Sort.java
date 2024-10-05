@@ -9,9 +9,7 @@ public abstract class Sort<T> implements ISort<T> {
 
 	protected List<T> data = new ArrayList<T>();
 	protected List<T> sortedData = new ArrayList<T>();
-	
-	protected int[] intData;
-	
+
 	private Map<T, Integer> indexedData = new HashMap<T, Integer>();
 	
 	@Override
@@ -28,11 +26,7 @@ public abstract class Sort<T> implements ISort<T> {
 		super();
 		this.data = data;
 	}
-	
-	public Sort(int[] data) {
-		super();
-		this.intData = data;
-	}
+
 	
 	public void print() {
 		this.print(null);
